@@ -13,6 +13,7 @@
 		0409D4F02274D53800FDF976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0409D4EF2274D53800FDF976 /* Assets.xcassets */; };
 		0409D4F32274D53800FDF976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409D4F12274D53800FDF976 /* LaunchScreen.storyboard */; };
 		04CA1EFC229C3D2E00A688DC /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1EFB229C3D2E00A688DC /* ChecklistItem.swift */; };
+		04CA1EFE229F392100A688DC /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1EFD229F392100A688DC /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0409D4F22274D53800FDF976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0409D4F42274D53800FDF976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CA1EFB229C3D2E00A688DC /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		04CA1EFD229F392100A688DC /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0409D4F12274D53800FDF976 /* LaunchScreen.storyboard */,
 				0409D4F42274D53800FDF976 /* Info.plist */,
 				04CA1EFB229C3D2E00A688DC /* ChecklistItem.swift */,
+				04CA1EFD229F392100A688DC /* AddItemViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0409D4EB2274D53700FDF976 /* ChecklistViewController.swift in Sources */,
+				04CA1EFE229F392100A688DC /* AddItemViewController.swift in Sources */,
 				04CA1EFC229C3D2E00A688DC /* ChecklistItem.swift in Sources */,
 				0409D4E92274D53700FDF976 /* AppDelegate.swift in Sources */,
 			);
