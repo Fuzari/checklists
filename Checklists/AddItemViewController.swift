@@ -10,7 +10,8 @@ import UIKit
 
 protocol AddItemViewControllerDelegate: class {
     func addItemViewControllerDidCancel(_ controller: AddItemViewController)
-    func addItemViewController(_ controller: AddItemViewController, didFinishingAdding item: ChecklistItem)
+    func addItemViewController(_ controller: AddItemViewController, didFinishAdding item: ChecklistItem)
+    func addItemViewController(_ controller: AddItemViewController, didFinishEditing item: ChecklistItem)
 }
 
 class AddItemViewController: UITableViewController, UITextFieldDelegate {
@@ -18,10 +19,17 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     weak var delegate: AddItemViewControllerDelegate?
+    var itemToEdit: ChecklistItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
+        
+        if let item = itemToEdit{
+            title = "Edit Item"
+            textField.text = item.text
+            doneBarButton.isEnabled = true
+        }
     }
     
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
@@ -38,11 +46,15 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     }
     
     @IBAction func done() {
-        let item = ChecklistItem()
-        item.text = textField.text!
-        item.checked = false
-        
-        delegate?.addItemViewCintroller(self, didFinishingAdding: item)
+        if let itemToEdit = itemToEdit{
+            itemToEdit.text = textField.text!
+            delegate?.addItemViewController(self, didFinishEditing: itemToEdit)
+        } else {
+            let item = ChecklistItem()
+            item.text = textField.text!
+            item.checked = false
+            delegate?.addItemViewController(self, didFinishAdding: item)
+        }
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
