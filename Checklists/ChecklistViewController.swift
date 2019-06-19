@@ -38,13 +38,14 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
     }
     
     var items = [ChecklistItem]()
+    var checklist: Checklist!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Enable large titles
-        navigationController?.navigationBar.prefersLargeTitles = true
         // Loading the data
         loadChecklistItems()
+        // Setting the title of the screen
+        title = checklist.name
     }
 
 //  This function counts how much rows need to display at storyboard

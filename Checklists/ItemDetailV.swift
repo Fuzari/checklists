@@ -36,6 +36,7 @@ class ItemDetailV: UITableViewController, UITextFieldDelegate {
         return nil
     }
     
+    // Pop up the keyboard
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textField.becomeFirstResponder()
