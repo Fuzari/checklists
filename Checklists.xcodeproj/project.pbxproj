@@ -51,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				0409D4E72274D53700FDF976 /* Checklists */,
+				0409D4E82274D53700FDF976 /* AppDelegate.swift */,
+				0409D4F42274D53800FDF976 /* Info.plist */,
 				0409D4E62274D53700FDF976 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,20 +68,42 @@
 		0409D4E72274D53700FDF976 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
-				0409D4E82274D53700FDF976 /* AppDelegate.swift */,
-				0409D4EA2274D53700FDF976 /* ChecklistViewController.swift */,
-				0409D4EC2274D53700FDF976 /* Main.storyboard */,
-				0409D4EF2274D53800FDF976 /* Assets.xcassets */,
-				0409D4F12274D53800FDF976 /* LaunchScreen.storyboard */,
-				0409D4F42274D53800FDF976 /* Info.plist */,
-				04CA1EFD229F392100A688DC /* ItemDetailV.swift */,
-				049BF59D22AA56A900937369 /* AllListsViewController.swift */,
-				04CA1EFB229C3D2E00A688DC /* ChecklistItem.swift */,
-				049BF59F22AAC6CB00937369 /* Checklist.swift */,
-				049BF5A122AAD6DD00937369 /* ListDetailViewController.swift */,
-				045CED9622C26279001710A1 /* DataModel.swift */,
+				043EE6A122C524290021220F /* Data Models */,
+				043EE6A022C523F60021220F /* View Controllers */,
+				043EE6A222C524640021220F /* Resourses */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		043EE6A022C523F60021220F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				049BF59D22AA56A900937369 /* AllListsViewController.swift */,
+				0409D4EA2274D53700FDF976 /* ChecklistViewController.swift */,
+				04CA1EFD229F392100A688DC /* ItemDetailV.swift */,
+				049BF5A122AAD6DD00937369 /* ListDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		043EE6A122C524290021220F /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				049BF59F22AAC6CB00937369 /* Checklist.swift */,
+				04CA1EFB229C3D2E00A688DC /* ChecklistItem.swift */,
+				045CED9622C26279001710A1 /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		043EE6A222C524640021220F /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				0409D4EF2274D53800FDF976 /* Assets.xcassets */,
+				0409D4F12274D53800FDF976 /* LaunchScreen.storyboard */,
+				0409D4EC2274D53700FDF976 /* Main.storyboard */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
