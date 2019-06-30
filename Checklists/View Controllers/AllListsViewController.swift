@@ -97,6 +97,8 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         } else {
             cell.detailTextLabel!.text = "\(checklist.countUncheckedChecklists()) Remaining"
         }
+        
+        cell.imageView!.image = UIImage(named: checklist.iconName)
         return cell
     }
     
